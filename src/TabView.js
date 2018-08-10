@@ -194,11 +194,11 @@ export default class TabView<T: *> extends React.Component<Props<T>, State> {
                 ...props,
                 route,
               });
-
-              if (React.isValidElement(scene)) {
-                /* $FlowFixMe: https://github.com/facebook/flow/issues/4775 */
-                return React.cloneElement(scene, { key: route.key });
-              }
+              console.log('rendered screen');
+              // if (React.isValidElement(scene)) {
+              //   /* $FlowFixMe: https://github.com/facebook/flow/issues/4775 */
+              //   return React.cloneElement(scene, { key: route.key });
+              // }
 
               return scene;
             }),
